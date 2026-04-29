@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Policy - Arena Holdings Internal Calendar Reminders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 32px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #0066cc;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .internal-notice {
+            background-color: #e8f4f8;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .key-clause {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SMS Policy - Arena Holdings Internal Calendar Reminders</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> April 29, 2026</p>
+
+        <h2>Overview</h2>
+        <p>This SMS Policy describes how Arena Holdings ("we", "us", or "Arena") handles phone numbers and message data in connection with our internal calendar reminder SMS service. This service is operated exclusively for internal use by Arena Holdings employees and is not available to the general public.</p>
+
+        <h2>Scope</h2>
+        <div class="internal-notice">
+            <strong>Internal Use Only:</strong> This SMS service is for internal use only by employees of Arena Holdings. We are not a consumer-facing service and do not solicit, market to, or send messages to the general public. Recipients are limited to a small group of Arena Holdings employees who have explicitly opted in to receive these messages.
+        </div>
+
+        <h2>Service Description</h2>
+        <p>The SMS service sends each opted-in employee short reminder messages shortly before their scheduled calendar events. Messages are informational only and contain no marketing, promotional, or third-party content.</p>
+        <ul>
+            <li><strong>Message Type:</strong> Informational / account notification (calendar event reminders)</li>
+            <li><strong>Frequency:</strong> Variable, based on the recipient's own calendar. Typically up to 5 messages per day per recipient, sent approximately 5–15 minutes before each scheduled event.</li>
+            <li><strong>Recipients:</strong> Internal Arena Holdings employees only</li>
+            <li><strong>Sender:</strong> Arena Holdings, via Twilio (10DLC registered)</li>
+        </ul>
+
+        <h2>Information We Collect</h2>
+        <p>To operate this service we collect and store only the minimum information required:</p>
+        <ul>
+            <li><strong>Mobile Phone Number:</strong> Provided directly by the employee at opt-in</li>
+            <li><strong>Opt-In Record:</strong> A copy of the employee's written email confirmation that they consent to receive SMS at the number they provided</li>
+            <li><strong>Calendar Source Data:</strong> The employee's own work calendar entries for the day, retrieved at send time and used to compose the message</li>
+            <li><strong>Message Delivery Metadata:</strong> Standard delivery status (sent / delivered / failed) returned by the SMS provider, used to diagnose delivery problems</li>
+        </ul>
+        <p>We do not collect message content sent <em>by</em> recipients, except for opt-out keywords (see below) and replies to <strong>HELP</strong> requests.</p>
+
+        <h2>How We Use Your Information</h2>
+        <p>The information described above is used solely to:</p>
+        <ul>
+            <li>Compose and send each opted-in employee reminders for their own scheduled calendar events</li>
+            <li>Honor opt-out and HELP requests</li>
+            <li>Diagnose and correct delivery problems</li>
+        </ul>
+        <p>We do <strong>not</strong>:</p>
+        <ul>
+            <li>Use mobile information for marketing, promotional, or advertising purposes</li>
+            <li>Send messages other than calendar event reminders and required opt-out / HELP responses</li>
+            <li>Share recipient phone numbers between employees</li>
+            <li>Sell, rent, or otherwise transfer recipient phone numbers or opt-in data to any third party</li>
+        </ul>
+
+        <h2>No Sharing of Mobile Information</h2>
+        <div class="key-clause">
+            <p><strong>Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes.</strong> Information sharing with subcontractors solely for support of the messaging service (for example, our SMS delivery provider) is permitted, but all other categories of information sharing exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+        </div>
+
+        <h2>Opt-In</h2>
+        <p>This service is strictly opt-in. An Arena Holdings employee becomes a recipient only after providing written confirmation — typically via email reply — that they consent to receive daily calendar SMS at a specified mobile number. The opt-in record is retained for the duration of the employee's participation and for a reasonable period thereafter for compliance purposes.</p>
+        <p>No employee is added to the recipient list automatically, and participation is entirely voluntary.</p>
+
+        <h2>Opt-Out</h2>
+        <p>You may stop receiving messages at any time by replying to any message with any of the following keywords (case-insensitive):</p>
+        <ul>
+            <li><strong>STOP</strong></li>
+            <li><strong>END</strong></li>
+            <li><strong>CANCEL</strong></li>
+            <li><strong>UNSUBSCRIBE</strong></li>
+            <li><strong>QUIT</strong></li>
+        </ul>
+        <p>After opt-out, you will receive a single confirmation message acknowledging that you have been unsubscribed, and no further messages will be sent to your number. You may also opt out at any time by contacting Arena directly using the contact information below.</p>
+
+        <h2>HELP</h2>
+        <p>Reply <strong>HELP</strong> to any message to receive a short response identifying the service, the sender, and how to reach Arena for further assistance.</p>
+
+        <h2>Message and Data Rates</h2>
+        <p>Message and data rates may apply, depending on the recipient's mobile carrier plan. Arena Holdings does not charge any fee for the SMS service itself; standard carrier rates from the recipient's mobile provider are the recipient's responsibility.</p>
+
+        <h2>Carrier Disclaimer</h2>
+        <p>Mobile carriers are not liable for delayed or undelivered messages. Delivery is subject to the recipient's mobile network availability and the recipient's device.</p>
+
+        <h2>Data Storage and Security</h2>
+        <ul>
+            <li><strong>Storage:</strong> Phone numbers and opt-in records are stored in Arena's internal systems with access restricted to authorized personnel</li>
+            <li><strong>Data Minimization:</strong> Only the information required to operate the service is collected; calendar content is retrieved at send time and is not retained after the message is composed</li>
+            <li><strong>Provider:</strong> Outbound messages are delivered via Twilio, subject to <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio's Privacy Notice</a></li>
+        </ul>
+
+        <h2>Recipient Rights</h2>
+        <p>Recipients have the right to:</p>
+        <ul>
+            <li><strong>Opt out at any time</strong> using any of the keywords listed above, or by contacting Arena directly</li>
+            <li><strong>Request deletion</strong> of their phone number and opt-in record</li>
+            <li><strong>No retaliation:</strong> Use or non-use of this service has no impact on employment status, evaluation, compensation, or any employment-related decision</li>
+        </ul>
+
+        <h2>Internal Use Statement</h2>
+        <div class="internal-notice">
+            <p><strong>This SMS service is operated exclusively for internal use by Arena Holdings employees.</strong> Arena Holdings is a private investment firm and does not provide services to external customers or the general public. This service is not commercially available and is not intended for distribution or use outside of Arena Holdings.</p>
+        </div>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this SMS Policy from time to time. Recipients will be notified of significant changes through internal communication channels.</p>
+
+        <h2>Contact</h2>
+        <div class="contact-box">
+            <p><strong>Arena Holdings</strong><br>
+            Email: [contact email to be added]<br>
+            Website: <a href="https://arenaholdings.com/">https://arenaholdings.com/</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Arena Holdings. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
