@@ -143,7 +143,7 @@
         <p>To operate this service we collect and store only the minimum information required:</p>
         <ul>
             <li><strong>Mobile Phone Number:</strong> Provided directly by the employee at opt-in</li>
-            <li><strong>Opt-In Record:</strong> A copy of the employee's written email confirmation that they consent to receive SMS at the number they provided</li>
+            <li><strong>Opt-In Record:</strong> A log of the employee's START keyword reply to the invitation SMS, including mobile number and timestamp of reply, retained as the consent record</li>
             <li><strong>Calendar Source Data:</strong> The employee's own work calendar entries for the day, retrieved at send time and used to compose the message</li>
             <li><strong>Message Delivery Metadata:</strong> Standard delivery status (sent / delivered / failed) returned by the SMS provider, used to diagnose delivery problems</li>
         </ul>
@@ -170,8 +170,14 @@
         </div>
 
         <h2>Opt-In</h2>
-        <p>This service is strictly opt-in. An Arena Holdings employee becomes a recipient only after providing written confirmation — typically via email reply — that they consent to receive daily calendar SMS at a specified mobile number. The opt-in record is retained for the duration of the employee's participation and for a reasonable period thereafter for compliance purposes.</p>
-        <p>No employee is added to the recipient list automatically, and participation is entirely voluntary.</p>
+        <p>This service is strictly opt-in. Employees opt in via SMS keyword through the following process:</p>
+        <ul>
+            <li>Arena Holdings sends the employee an invitation SMS to their mobile number: <em>"Arena Holdings calendar event reminder SMS — reply START to subscribe, STOP to decline."</em></li>
+            <li>The employee opts in by replying <strong>START</strong> to this invitation message.</li>
+            <li>The START reply is logged with the mobile number and timestamp as the consent record.</li>
+            <li>Employees who do not reply START, or who reply STOP, are not enrolled.</li>
+        </ul>
+        <p>No employee is added to the recipient list automatically, and participation is entirely voluntary. Opt-in records are retained for the duration of the employee's participation and for a reasonable period thereafter for compliance purposes.</p>
 
         <h2>Opt-Out</h2>
         <p>You may stop receiving messages at any time by replying to any message with any of the following keywords (case-insensitive):</p>
