@@ -125,6 +125,14 @@
         <h2>Overview</h2>
         <p>This SMS Policy describes how Arena Holdings ("we", "us", or "Arena") handles phone numbers and message data in connection with our internal calendar reminder SMS service. This service is operated exclusively for internal use by Arena Holdings employees and is not available to the general public.</p>
 
+        <h2>About Arena Holdings</h2>
+        <p>Arena Holdings is a private investment firm headquartered in New York, NY.</p>
+        <ul>
+            <li><strong>Company website:</strong> <a href="https://arenaholdings.com/" target="_blank">https://arenaholdings.com/</a></li>
+            <li><strong>Business address:</strong> 119 5th Avenue, Floor 8, New York, NY 10003, United States</li>
+        </ul>
+        <p>This SMS Policy is published by Arena Holdings' developer of record (Renata Sisilio) on Arena's behalf and hosted on GitHub Pages.</p>
+
         <h2>Scope</h2>
         <div class="internal-notice">
             <strong>Internal Use Only:</strong> This SMS service is for internal use only by employees of Arena Holdings. We are not a consumer-facing service and do not solicit, market to, or send messages to the general public. Recipients are limited to a small group of Arena Holdings employees who have explicitly opted in to receive these messages.
@@ -170,14 +178,12 @@
         </div>
 
         <h2>Opt-In</h2>
-        <p>This service is strictly opt-in. Employees opt in via SMS keyword through the following process:</p>
-        <ul>
-            <li>Arena Holdings sends the employee an invitation SMS to their mobile number: <em>"Arena Holdings calendar event reminder SMS — reply START to subscribe, STOP to decline."</em></li>
-            <li>The employee opts in by replying <strong>START</strong> to this invitation message.</li>
-            <li>The START reply is logged with the mobile number and timestamp as the consent record.</li>
-            <li>Employees who do not reply START, or who reply STOP, are not enrolled.</li>
-        </ul>
-        <p>No employee is added to the recipient list automatically, and participation is entirely voluntary. Opt-in records are retained for the duration of the employee's participation and for a reasonable period thereafter for compliance purposes.</p>
+        <p>This service is strictly opt-in and uses a two-step process:</p>
+        <ol>
+            <li><strong>Step 1 — Internal request and number collection.</strong> Arena Holdings asks each employee individually (via internal email or in-person conversation with Arena's IT team) whether they wish to receive calendar event reminder SMS. Employees who agree provide their mobile number to Arena's IT team. This step happens through Arena's internal channels and is not a public sign-up form.</li>
+            <li><strong>Step 2 — SMS confirmation.</strong> The system sends an invitation SMS from the Arena Holdings Twilio number to the provided mobile number: <em>"Arena Holdings calendar event reminder SMS — reply START to subscribe, STOP to decline."</em> The employee opts in by replying <strong>START</strong>. The START reply is logged with the mobile number and timestamp as the verified consent record.</li>
+        </ol>
+        <p>Employees who do not reply START, or who reply STOP, are not enrolled. No employee is added to the recipient list automatically. There is no public opt-in form, no web form, no third-party list, no purchased or scraped numbers. The recipient list is fixed at the small set of internal Arena Holdings employees who have completed both steps. Participation is entirely voluntary. Opt-in records are retained for the duration of the employee's participation and for a reasonable period thereafter for compliance purposes.</p>
 
         <h2>Opt-Out</h2>
         <p>You may stop receiving messages at any time by replying to any message with any of the following keywords (case-insensitive):</p>
@@ -225,8 +231,9 @@
         <h2>Contact</h2>
         <div class="contact-box">
             <p><strong>Arena Holdings</strong><br>
-            Email: devtest@arenaholdings.com<br>
-            Website: <a href="https://arenaholdings.com/">https://arenaholdings.com/</a></p>
+            Address: 119 5th Avenue, Floor 8, New York, NY 10003, United States<br>
+            Website: <a href="https://arenaholdings.com/">https://arenaholdings.com/</a><br>
+            Email: devtest@arenaholdings.com</p>
         </div>
 
         <footer>
